@@ -68,6 +68,8 @@ Deploying the Bicep Template:
   az deployment group create --resource-group <your-resource-group> --template-file ./servicebus.bicep
   ```
 
+  > You should only create a resource group once. But you can deploy the Bicep template multiple times to update the existing resources.
+
 - This will create the Service Bus Namespace and Queue in your Azure resource group.
 
 ## Define Function Bindings to Send/Receive Messages from Service Bus
