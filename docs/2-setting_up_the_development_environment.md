@@ -76,31 +76,17 @@ The Azure Functions Core Tools is essential for creating, running, and debugging
   ```
   - You should see a version like 4.x.x.
 
-## Setting up Visual Studio/VS Code for Azure Functions and Bicep
+## Bicep
 
-You can choose to develop your project in either Visual Studio or Visual Studio Code. Both tools support Azure Functions development and infrastructure management using Bicep.
+Bicep is a domain-specific language (DSL) for deploying Azure resources declaratively. It simplifies the process of writing Azure Resource Manager (ARM) templates.
 
-- Option 1: Visual Studio (Windows/Mac)
-  - Install Visual Studio:
-    - Download and install Visual Studio 2022.
-  - Install Azure Functions Tools:
-    - Open Visual Studio and go to Tools > Get Tools and Features.
-    - Ensure that Azure Development is selected, which includes support for Azure Functions.
-  - Install Bicep Extension:
-    - In Visual Studio, go to Extensions > Manage Extensions.
-    - Search for Bicep and install the Bicep Language Support extension.
-- Option 2: Visual Studio Code (Cross-platform)
-  - Install Visual Studio Code:
-    - Download and install Visual Studio Code.
-  - Install Azure Functions Extension:
-    - Open VS Code and go to Extensions (Ctrl + Shift + X).
-    - Search for Azure Functions and install the Azure Functions extension.
-  - Install Bicep Extension:
-    - In the Extensions view, search for Bicep and install the Bicep extension. This extension allows you to write and manage Bicep files directly from VS Code.
-  - Install C# Extension (for .NET 8):
-    - Install the C# extension for Visual Studio Code, which provides language support for .NET 8.
-  - Install Azure CLI Extension (Optional):
-    - You can also install the Azure CLI Tools extension to manage Azure resources directly from VS Code.
+### Steps
+
+- You can install Bicep using the Azure CLI extension.
+
+  ```bash
+  az bicep install
+  ```
 
 ## Summary
 
